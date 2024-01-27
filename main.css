@@ -1,0 +1,910 @@
+/*(Laptop-Version)*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li{
+	list-style-type:square;
+	margin-top: 0.3em;
+}
+/*Hintergrundfarben:__________________________________________________________-
+Hier werden alle Farben für die jeweiligen Elemente definiert
+Blau: #dcdaf1; #262262; #161439;
+weiß: #f9f9f9;
+rot: #be1e2d;
+grau:  #575757;
+*/
+
+/* Farben für die Navigation, bzw. den Kopfcontainer  */
+#hauptnavigation, #toplist, #kopf{
+	background-color:#f9f9f9;
+}
+
+/* Farben für die Menü-Buttons zum Öfnen/Schließen des aufklappbaren Menüs(Mobiele-Version) */
+#menue, #schliessemenue{
+	color:#161439;
+	float:right;
+}
+
+/*Navigationslinks sollen die Textfarbe haben */
+#toplist a{
+	color:#161439;
+}
+
+/* Die Navigationselemente sollen ihre Farbe ändern, wenn man sie antippt/über sie hinüberfährt */
+#hauptnavigation li a:hover,
+#hauptnavigation li a:active
+{
+	background-color:#dcdaf1;
+}
+
+/* Das Logo soll die aus der Corporate-Identity bestimmte Farbe als Hintergrundfarbe haben */
+#kopf img{
+	background-color:#f9f9f9;
+}
+
+/* Die Über uns Seite und ihre Links(a) erhalten ihre Farbe */
+#wir, #wir a, body, #impressum, #impressum a, #datenschutz, #datenschutz a{
+	background-color:#f9f9f9;
+	color:#575757;
+}
+
+/* Die Technologie-Seite und ihre Links bekommen ihre Farbzuweisung */
+#technologie, #technologie a{
+	background-color:#262262;
+	color:#dcdaf1;
+}
+
+/* Die Karriere-Seite bekommt ihre Farbe, hierbei wird den Links keine Hintergrundfarbe zugeordnet, da sich diese beim Drüberfahren/aktivieren verändern soll */
+#karriere{
+	background-color:#f9f9f9;
+	color:#575757;
+}
+#karriere a{
+	color:#575757;
+}
+
+/* Hier bekommt die Kontakt-Seite, aber auch der ganze Body(der im Hintergrund ist) seine Farbe */
+#kontakt, #kontakt a{
+	background-color:#262262;
+	color:#dcdaf1;
+}
+
+/* Farbe für den Fuß-Bereich */
+#fuss, #fuss a{
+	background-color:#f9f9f9;
+	color:#161439;
+}
+
+/* Hintergrundfarbe für den schwebenden Startseite-Link */
+#back{
+	background-color:#f9f9f9;
+}
+
+/* Farbzuordnung für die Überschriften der jeweiligen Bereiche */
+#karriere h2,  #wir h2, #karriere h3, #wir h3{
+	color:#161439;
+}
+#technologie h3, #kontakt h3, #technologie h2,#kontakt h2{
+	color:#817bd1;
+}
+#start h1{
+	color:#f9f9f9;
+}
+
+/* Der Joblink dient dem Aufklappen des Menüs und soll beim auswählen/drüberfahren seine Farbe verändern */
+.joblink:hover{
+	text-decoration:none;
+	background-color:#dcdaf1;
+}
+/* Hier wird zusätzlich die größe verändern => Aufklappen */
+.job:target {
+	background-color:#dcdaf1;
+}
+/* Die restlichen Links, z.B. im Fuß-Bereich sollen durch eine rote Linie als Links erkenntlich sein */
+a:hover, a:active{
+	text-decoration:underline #bf1e2d double;
+}
+
+/* Formatierung des Menü-Button und des Menü-Schließen-Button */
+#menue:hover, #menue:active, #schliessemenue:hover,#schliessemenue:active{
+	text-decoration:none;
+	background-color:#dcdaf1;
+}
+
+/* Hintergrundfarbe des Bildes für die Über uns Seite */
+#wir img{
+	background-color:#262262;
+}
+
+/* Container mit Informationen für Bewerber farblich gestalten */
+#bewerbeninfo, #bewerbeninfo a, #leadKarriere{
+	background-color:#dcdaf1;
+	color:#575757;
+}
+
+
+/*Textgrößen_________________________________________________________________________
+Hier werden die Textgrößen der unterschiedlichen Elemente definiert. Dabei wird auf die
+Einheit em zurückgegriffen, sodass diese vom User über den Browser angepasst werden können
+1em entspricht der Schriftgröße des Browsers Bsp. Standard-Schriftgröße = 16pt => 1em = 16pt
+Dabei bezieht sich das em immer auf die Schriftgröße des Elternelements*/
+
+/* Einstellen der Schriftgröße für den ganzen HTML-Bereich. Dieser soll der im Browser eingestellten Schriftgröße entsprechen
+Außerdem Fonts(font-family) auswählen */
+html{
+	font-size:1em;
+	font-family:Arial, Verdana, "Times New Roman";
+}
+div, section, article, aside, ul{
+	font-size:1em;
+}
+
+/*Überschrift1: 38px bei browser 16px */
+h1{
+	font-size:2.375em;
+	line-height: 1.4em;
+	margin-bottom: 0px;
+}
+/*Überschrift2: 28px bei browser 16px */
+h2{
+	font-size:1.75em;
+	margin-bottom:5px;
+}
+/*Überschrift3: 24px bei browser 16px */
+h3{
+	font-size:1.5em;
+	margin-bottom:5px;
+}
+/*Überschrift4: 20px bei browser 16px */
+h4{
+	font-size:1.25em;
+	margin-bottom:3px;
+}
+/*Links 16px bei Browser 16px */
+a{
+	font-size:1em;
+}
+
+/* Fett und 18px bei brwoser 16px für die Navigationselemente */
+#hauptnavigation li{
+	font-size: 1.125em;
+	font-weight:bold;
+}
+
+/* Text soll der eingestellten Browserschriftgröße entsprechen  */
+p{
+	font-size:1em;
+}
+
+/* Hervorgehobener Text Schrifteinstellung*/
+em{
+	font-size:1em;
+	font-weight:normal;
+	font-style: normal;
+}
+
+/* Zitat Formatierung */
+q{
+	font-size:1em;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;
+}
+/* Gänsefüßchen auf */
+q:before{
+	content:open-quote;
+}
+/* Gänsefüßchen zu */
+q:after{
+	content:close-quote;
+}
+
+/* Menü-Button, zum Aufklappen der Navigation */
+#menue{
+	font-size:1.75em;
+	padding:5px;
+}
+
+/* Navigation zuklappen */
+#schliessemenue{
+	font-size:1.5em;
+	font-weight:bold;
+	padding:5px;
+}
+
+/*Stellenausschreibung: 18px bei Browser 16px */
+.job{
+	font-size:1.125em;
+}
+/*Jobbeschreibung: 16px bei Browser 16px, Elternelement hat 18px => em<1 */
+.jobbeschreibung{
+	font-size:0.89em;
+	margin-top: 0.5em;
+}
+/* Überschrift innerhalb der Jobbeschreibung: 18px bei Browser 16px */
+.jobbeschreibung h4{
+	font-size:1.125em;
+	margin-top: 0.5em;
+}
+/* Jobbeschreibung-Schließen "X": 18px bei Browser 16px */
+.schliessen{
+	font-size:1.125em;
+}
+
+/* 14px bei Browser 16px im Fuß-Bereich */
+footer{
+	font-size:0.875em;
+}
+
+/* Nun kommen weitere grundlegende Formatierungen______________________________________ */
+/*Da ältere Browser manche HTML5-Elemente nicht als Block erkennen --> Anweisung! */
+footer, header, main, nav, aside, section{
+	display: block;
+}
+
+/* Der Body soll 100% des Anzeigebereiches einnehmen, die Buchstaben einen Abstand von 2px haben und die Linienhöhe etwas erhöht sein */
+body{
+	min-width:300px;
+	width:100%;
+	letter-spacing:2px;
+	line-height:1.4em;
+}
+
+/* Unterhalb von Listen soll ein wenig freier Platz sein */
+ul{
+	margin-bottom:10px;
+}
+
+/* Der Gesamt-Container soll den Anzeigebereich komplett ausfüllen */
+#gesamt{
+	width:100%;
+	margin:0;
+}
+/* Section-Container ebenfalls */
+section{
+	width:100%;
+	padding:0;
+	text-decoration:none;
+	margin-bottom:30px;
+}
+/* Links sollen wie normaler Text aussehen */
+a{
+	text-decoration:none;
+}
+
+/* Hier wird der Startseite-Button an seiner Position fixiert und formatiert  */
+#back{
+	position:fixed;
+	top:80%;
+	right:40px;
+	border: 2px solid rgb(191, 30, 45);
+	-moz-border-radius: 10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	width:60px;
+	z-index:3000;
+	display:none;
+}
+#back img{
+	width:100%;
+	height: auto;
+}
+
+/*___Kopfbereich_______________________________________________________________________*/
+#kopf, #kopfcontainer{
+	width:100%;
+	margin:0;
+}
+#hauptnavigation{
+	width:100%;
+	margin:20px auto 0 auto;
+}
+
+/* Die Buttons zum Öffnen und Schließen des Menüs sind in der Desktop-Version versteckt */
+#menue, #schliessemenue{
+	float:right;
+	display:none;
+}
+
+/* Hier wird die vertikale Listennavigation zu einer horizontalen Balkennavigation  */
+#hauptnavigation #toplist{
+	padding:0;
+	width:100%;
+	display:inline-block;
+}
+#toplist li{
+	list-style:none;
+	float:left;
+	position: relative;
+	z-index: 1600;
+}
+#toplist li::after{
+	content: "";
+	clear: both;
+}
+#hauptnavigation li a{
+	display: inline-block;
+	padding:10px 15px;
+	width:100%;
+}
+#toplist a{
+	text-decoration:none;
+}
+/* Dropdown-liste */
+#hauptnavigation .dropdown{
+	position: relative;
+}
+
+#hauptnavigation .dropdown-liste{
+	display: none;
+	position: absolute;
+	top: 2em;
+	padding-top: 25px;
+	left: 0;
+	background-color: #f9f9f9;
+	z-index: 1500;
+}
+
+#aktuelles:target .dropdown-liste{
+	display: block;
+}
+
+#hauptnavigation .dropdown-liste li{
+	width: 100%;
+}
+
+#hauptnavigation .dropdown-liste li a{
+	font-size: 0.8em;
+	width: 100%;
+}
+
+.dropdown-schliessen-li{
+	display: block;
+}
+
+.dropdown-schliessen{
+	text-align: center;
+}
+
+/* Logo formatieren */
+#kopf .logo{
+	width:25%;
+	float:left;
+	padding:0;
+	height: auto;
+	max-height: 70px;
+}
+.btnlang{
+	width:40px;
+	position:absolute;
+	left:25%;
+	top:35px;
+}
+.btnlang img{
+	width:100%;
+	height: auto;
+}
+/*__Rest_______________________________________________________________________________*/
+#rest{}
+/*Gitter, 5 Spalten mit den jeweiligen breiten*/
+.col1{
+	width:20%;
+}
+.col2{
+	width:40%;
+}
+.col3{
+	width:60%;
+}
+.col4{
+	width:80%;
+}
+.col5{
+	width:100%;
+}
+.col1, .col2, .col3, .col4, .col5{
+	float:left;
+	padding:10px 25px;
+}
+section::after{
+	clear:both;
+	content:"";
+	display:table;
+}
+/* Gitter Ende */
+
+/* Allgemeine Formatierung für die jeweiligen Bereiche */
+#start,#technologie,#kontakt,#wir, #karriere, #fuss{
+	width:100%;
+	margin:0 auto;
+	padding-top:15px;
+	padding-bottom:10px;
+}
+
+/* Formatierung der Listen */
+#wir ul, #karriere ul, #technologie ul{
+	list-style-position:inside;
+}
+
+#rest section{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h2, h3, #bewerbeninfo h4{
+	padding-bottom: 20px;
+}
+
+#potsdam h3{
+	padding-top: 30px;
+}
+
+/*___Startseite Formatierungen________________________________________________________________________*/
+#start, #start section, #start .col5,#start .hero, .heroV, #start h1{
+	padding:0px;
+	margin:0px;
+	width:100%;
+}
+#start .col5{
+	position:relative;
+	overflow:hidden;
+}
+#start h1{
+	position:absolute;
+	padding: 15% 20%;
+	left:0;
+	top:0;
+	z-index:1100;
+}
+/* Zu animierendes Herz */
+.heart{
+	position:absolute;
+	left:24%;
+	top:30%;
+	width:15%;
+	padding:0px;
+	animation: heartbeat 1s linear 2s infinite alternate;
+	z-index:900;
+	height: auto;
+}
+/*Animation des Herzens */
+@keyframes heartbeat{
+	0%{width:15%;left:24%;top:30%;}
+	100%{width:20%;left:21%;top:25%;}
+}
+.hero{
+	z-index:800;
+	height: auto;
+}
+.heroV{
+	z-index:1000;
+	position:absolute;
+	left:0px;
+	top:0px;
+	height: auto;
+}
+
+.lead{
+	text-decoration: none;
+	background-color: #be1e2d;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #f9f9f9;
+	display: inline-block;
+	padding: 0px 5px;
+	margin-left: 55%;
+}
+.lead:hover{
+	text-decoration: none;
+}
+/*___Über uns Formatierungen__________________________________________________________________________*/
+#wir{
+	padding-top:20px;
+}
+#wir ul{
+	padding-top:5px;
+}
+
+/* Die Text-Spalte in Über uns und Karriere anpassen */
+#wir .col3, #karriere .col3{
+	padding-right:20%;
+}
+#wir img{
+	width:100%;
+	float:left;
+	height: auto;
+}
+/*Alle article */
+article{
+	margin-bottom: 15px;
+}
+
+/*___Technologie_______________________________________________________________________*/
+#uebersicht{
+	margin-bottom:5px;
+}
+#technologie img{
+	float:left;
+	width:100%;
+	height: auto;
+}
+/* Text-Spalte anpassen */
+#technologie .col3{
+	padding-right:10px;
+	padding-left:20%;
+}
+/*___Karriere__________________________________________________________________________*/
+aside{
+	margin-bottom: 15px;
+}
+#karriere .karrierebilder{
+	float:left;
+	width:100%;
+	height: auto;
+}
+.job{
+	height:auto;
+	overflow:hidden;
+	width:100%;
+	padding: 0 15px 5px;
+	list-style-type:none;
+}
+.job h4{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.joblink{
+	padding:5px 20px 5px 5px;
+	line-height: 1.5em;
+}
+#bewerbeninfo{
+	padding: 20px 15px;
+}
+.jobbeschreibung{display:none;}
+.job:target > .jobbeschreibung{
+	display:block;
+}
+/* Schließen "X" nach rechts legen */
+.schliessen{
+	float:right;
+	padding:5px 15px;
+}
+.marker{
+	float:left;
+	height:1em;
+	width:auto;
+	padding-top:5px;
+}
+
+/* Förderung */
+
+#förderung{
+	margin-bottom:40px;
+}
+
+/*___Kontakt___________________________________________________________________________*/
+#kontakt{
+	margin-bottom:0px;
+}
+
+/*___Fussbereich_______________________________________________________________________*/
+#fuss{
+	padding:0;
+}
+footer{
+	text-align:center;
+	padding:15px;
+}
+.ende{
+	padding-right:15px;
+}
+
+footer ul{
+	overflow:hidden;
+}
+/*Datenschutz und Impressum */
+#datenschutz .col3 ul li{
+	list-style-type:square;
+	list-style-position:inside;
+}
+/*______________Responsiveness____________________________________________________________________________*/
+@media (max-width: 1450px){
+	/* Kopfbereich anpassen */
+	#kopf .col2{
+		width:30%;
+	}
+	#kopf .col3{
+		width:70%;
+	}
+	#kopf .logo{
+		width:50%;
+		float:left;
+	}
+}
+/* ________________________________________________________________________________________________________*/
+@media (max-width: 1200px)
+{
+		/*Gitter*/
+	.col1{
+		width:1%;
+	}
+	.col2{
+		width:33%;
+	}
+	.col3{
+		width:66%;
+	}
+	.col4{
+		width:100%;
+	}
+	.col5{
+		width:100%;
+	}
+	.col1, .col2, .col3, .col4, .col5{
+		float:left;
+		padding:10px;
+	}
+	#start div{
+		padding:0;
+	}
+	/* Gitter Ende */
+
+	/* Seitenbereiche anpassen */
+	#wir .col3, #karriere .col3{
+		padding-right:25px;
+	}
+	#technologie .col3{
+		padding-left:25px;
+	}
+	/* Kopfbereich anpassen */
+	#kopf .col2{
+		width:25%;
+	}
+	#kopf .col3{
+		width:75%;
+	}
+	#kopf .logo{
+		width:60%;
+		float:left;
+	}
+
+	#hauptnavigation{
+		font-size: 0.9em;
+	}
+
+	#hauptnavigation li a{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#start{
+		padding:0;
+	}
+	#start h1{
+		/*Für Browser die vw nicht unterstützen */
+		font-size:1.5em;
+		padding:15% 20%;
+		font-size:3vw;
+	}
+	.btnlang{
+		left:20%;
+	}
+}
+/* ________________________________________________________________________________________________ */
+@media (max-width: 950px)
+{
+		/*Gitter*/
+	.col1{
+		width:0%;
+	}
+	.col2{
+		width:40%;
+	}
+	.col3{
+		width:60%;
+	}
+	.col4{
+		width:100%;
+	}
+	.col5{
+		width:100%;
+	}
+	/* Gitter Ende */
+
+	#wir .col3, #karriere .col3{
+		padding-right:25px;;
+	}
+	#technologie .col3{
+		padding-left:25px;
+	}
+	#back{
+		width:40px;
+	}
+	#kopf .col2{
+		width:20%;
+		margin:0;
+	}
+	#kopf .col3{
+		width:80%;
+		margin:0;
+		padding:0;
+	}
+	#hauptnavigation, #toplist, #start{
+		margin:0;
+		padding:0;
+	}
+	#hauptnavigation{
+		padding-top:10px;
+	 }
+
+	#kopf logo{
+		width:80%;
+	}
+	.btnlang{
+		left:14%;
+		top:15px;
+	}
+}
+/* ______________________________________________________________________________________________ */
+@media (max-width: 800px)
+{
+
+	#back{display:block;}
+		/*Gitter*/
+	.col1{
+		width:0%;
+	}
+	.col2{
+		width:100%;
+	}
+	.col3{
+		width:100%;
+	}
+	.col4{
+		width:100%;
+	}
+	.col5{
+		width:100%;
+	}
+	/* Gitter Ende */
+	#wir img, #technologie img, #karriere .karrierebilder{
+		width:100%;
+	}
+	#wir .col3, #karriere .col3, #technologie .col3, #kontakt .col3,
+	#wir .col2, #karriere .col2, #technologie .col2{
+		padding-right:25px;
+		padding-left:25px;
+	}
+	/* Zurück-Butoon verkleiner */
+	#back{
+		width:40px;
+		right:20px;
+	}
+
+	/* Kopfbereich anpassen */
+	#kopf .col3, #kopf .col2{
+		margin:0 auto;
+		padding:10px;
+	}
+	#kopf .col3{
+		width:80%;
+	}
+	#kopf .col2{
+		width:20%;
+	}
+	#hauptnavigation{
+		clear:both;
+		margin:0px auto 0 auto;
+		line-height:1;
+		padding: 0;
+		height:2em;
+		display:block;
+		font-size: 1em;
+	}
+	#hauptnavigation li{
+		clear:both;
+		width:100%;
+		padding: 0 15px;
+	}
+	#hauptnavigation li > a{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#kopf .logo{
+		float:left;
+		margin:0;
+		padding:0;
+		width:90%;
+	}
+	#menue{
+		display:block;
+		width:25%;
+		text-align:right;
+		padding-right:30px;
+	}
+	#schliessemenue{
+		display:none;
+		width:100%;
+		text-align:center;
+		padding-right:20px;
+	}
+
+	#hauptnavigation #toplist{
+		display: none;
+	}
+
+	#hauptnavigation:target #toplist, #hauptnavigation:target #schliessemenue{
+		display: block;
+	}
+
+	/* Dropdown */
+	/* Dropdown-liste */
+	#hauptnavigation .dropdown{
+		position: relative;
+	}
+
+	#hauptnavigation .dropdown-liste{
+		display: block;
+		position: static;
+		padding-top: 0;
+	}
+
+	#aktuelles:target .dropdown-schliessen-li{
+		display: none;
+	}
+
+	.dropdown-schliessen-li{
+		display: none;
+	}
+
+	#hauptnavigation .dropdown-liste li{
+		padding: 0 0;
+	}
+
+	#hauptnavigation .dropdown-liste li a{
+		display: inline-block;
+		padding-left: 25px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	#start h1{
+		/*Für Browser die vw nicht unterstützen */
+		font-size:1.25em;
+		padding:15% 5% 15% 15%;
+		font-size:3vw;
+	}
+	.btnlang{
+		left:50%;
+		top:15px;
+	}
+	/* ____________________________________________________________________________________ */
+	@media (max-width: 500px){
+		/* Kopfbereich anpassen */
+	  #kopf .col3{
+		width:75%;
+	  }
+	  #kopf .col2{
+		width:25%;
+	  }
+	  #start h1{
+		/*Für Browser die vw nicht unterstützen */
+		font-size:16px;
+		padding:5% 5% 10% 15%;
+		font-size:3.25vw;
+		padding:15% 5% 15% 15%;
+	}
+
+	#kopf .logo{
+		width:100%;
+	}
+
+	@media (max-width: 300px){
+		 #start h1{font-size:10px;}
+	   }
+	 }
+/* _____________________________________________________________________________________________ */
+}

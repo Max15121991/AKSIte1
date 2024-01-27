@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<!-- Zeichenkodierung -->
+	<meta charset="utf-8">
+	<!-- Breite des Anzeigebereiches -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Maximilian Filling">
+	<meta name="description" content="Endoskopie auf Basis digitaler optischer Holografie">
+	<meta name="keywords"
+		content="AKmira optronics, Medizintechnik, Endoskopie, digitale optische Holografie, Interferometrie, miniaturisierte 3D Endoskope, 3D Skanning, Potsdam, Berlin, Dr. Alexander Knüttel">
+	<title>AKmira optronics</title>
+	<!-- Stylesheet (main.css) einbinden-->
+	<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<!--___________________________________________________________________________________________________________-->
+
+<body>
+	<!-- Gesamtcontainer, hierin wird alles in einem Container untergebracht -->
+	<div id="gesamt">
+
+		<!-- Kopfcontainer Hier kommt der Header mit dem Logo und der Navigation -->
+		<div id="kopf">
+			<section id="kopfcontainer">
+				<!-- Logo  -->
+				<div class="col2">
+					<a href="index.html"><img class="logo" src="bilder/logo.svg"
+							alt="Unternehmenslogo AKmira optronics"></a>
+				</div>
+
+				<!-- Hauptnavigation -->
+				<div class="col3">
+					<nav id="hauptnavigation">
+						<!-- Link(<a> ... </a> zum Öffnen der aufklappbaren Navigation (Mobile-Version) -->
+						<a id="menue" href="#hauptnavigation">&equiv;</a>
+						<!-- Navigationselemente in Form einer Liste -->
+						<ul id="toplist">
+							<li class="top"><a href="#start">Startseite</a></li>
+							<li class="top"><a href="#wir">Über uns</a></li>
+							<li class="top"><a href="#technologie">Technologie</a></li>
+							<li class="top"><a href="#karriere">Karriere</a></li>
+							<li class="top dropdown" id="aktuelles">
+								<a href="#aktuelles">Aktuelles</a>
+								<ul class="dropdown-liste">
+									<li>
+										<a href="https://innovatives-brandenburg.de/de/cluster-stories/der-winzige-scanner-der-alles-sieht"
+											target="_blank">
+											Innovatives Brandenburg
+										</a>
+									</li>
+									<li>
+										<a href="https://www.optik-bb.de/news/artikel/der-winzige-scanner-der-alles-sieht/"
+											target="_blank">
+											Optik-Brandenburg
+										</a>
+									</li>
+									<li class="dropdown-schliessen-li">
+										<a href="#hauptnavigation" class="dropdown-schliessen">&times;</a>
+									</li>
+								</ul>
+							</li>
+							<li class="top"><a href="#kontakt">Kontakt</a></li>
+						</ul>
+						<!-- Schliessen-Link zum Schließen des aufklappbaren Menüs (mobile-Version) -->
+						<a id="schliessemenue" href="#menue">&times;</a>
+					</nav> <!-- Hauptnavigation schließen -->
+				</div>
+			</section> <!-- Sectionbereich des Kopfcontainers schließen  -->
+		</div> <!-- Kopfcontainer schließen -->
+
+		<!-- restlicher Bereich, dieser Bereich liegt immer unter dem Kopfbereich.-->
+		<div id="rest">
+
+			<!-- Zurück-Link, Mit dem Link, in Form eines Bildes, kommt man immer zurück zum Start -->
+			<div id="back">
+				<a href="#kopf"><img src="bilder/pfeil.svg" alt="Zurück zur Startseite"></a>
+			</div>
+			<div class="btnlang">
+				<a href="en_index.html">
+					<img src="bilder/de_en.svg" alt="Wechseln in englische Sprache">
+				</a>
+			</div>
+
+			<!-- Startseite Bereich  -->
+			<div id="start">
+				<section>
+					<div class="col5">
+						<img class="hero" src="bilder/HerzLaser.svg" alt="Laserstrahl">
+						<img class="heart" src="bilder/Herz.svg" alt="Herz Hologramm">
+						<img class="heroV" src="bilder/HerzLaserV.svg" alt="Laserstrahl">
+						<h1>Wir bieten ultra miniaturisierte 3D Holographie und führen Sie in eine neue Zukunft in der
+							Medizintechnik!<br>
+							<a href="#karriere" class="lead">Karriere</a>
+						</h1>
+					</div>
+				</section>
+			</div> <!-- Startseite schließen -->
+
+			<!-- Über uns Bereich  -->
+			<div id="wir">
+				<section>
+					<div class="col2"><img class="wirbilder" src="bilder/scribblenrm.svg" alt="Bild über Endoskopie">
+					</div>
+					<div class="col3">
+						<article>
+							<h2>Über uns</h2>
+							<!-- Hier kann innerhalb der <p>-Tags ein Text ausgegeben werden -->
+							<p>
+								AKmira optronics entwickelt miniaturisierte 3D Scanner, deren primäres Einsatzgebiet die
+								3D Endoskopie/ Medizintechnik sein wird. Die zugrunde liegende – im ausser-akademischen
+								Umfeld neuartige - Technologie basiert auf der digital, optischen Holografie und ist
+								eine
+								Erweiterung der bekannten optischen Interferenzverfahren wie OCT (Optical Coherence
+								Technology) oder
+								der Interferenz-Mikroskopie. Inhärente Vorteile sind u.a.:
+							</p>
+							<ul>
+								<li>Scanning von 3D Objekten auch mit sehr strukturarmer Oberfläche</li>
+								<li>Optisches „Stitching“ auch über viel größere Bereiche als das Scanfeld</li>
+								<li>Handbewegung des Scanners bzw. Zittern hat keinen negativen Einfluß</li>
+								<li>RGB Farbinformation mit mikroskopischer 3D Auflösung</li>
+								<li>Keine bewegten Teile im 3D Scanner</li>
+							</ul>
+							<br>
+							<p>
+								Der Gründer und Geschäftsführer Dr. Alexander Knüttel hat die – im industriellen Umfeld
+								neuartige - digital,
+								optische Holografie eingeführt, welche durch eine kompakte Modularität
+								unterschiedliche Scanner-Typen ermöglicht und in unterschiedlichen Märkten der
+								Medizintechnik
+								einsetzbar ist. Ziel ist die Miniaturisierung auf Volumina mit einigen mm Kantenlänge in
+								jeder
+								Dimension, bei gleichzeitiger Integration von 3D Farbinformation und weiteren
+								Messmöglichkeiten
+								unter der Oberfläche.
+								<br><br>
+								Unser schnell wachsendes Team ist in sehr unterschiedlichen, technologisch
+								herausfordernden,
+								Disziplinen unterwegs und hat den Sitz in Potsdam.Unser aller Kern-Motto ist:
+								<!-- Das <q>-Tag steht für ein Zitat -->
+								<q>Spring – und lass Dir dabei Flügel wachsen</q> (Ray Bradburry)
+							</p>
+						</article>
+					</div>
+				</section>
+			</div> <!-- wir schließen -->
+
+			<!-- Technologie Bereich -->
+			<div id="technologie">
+				<section id="uebersicht">
+
+					<div class="col3">
+						<article>
+							<h2>Unsere Technologie</h2>
+							<p>
+								Die zugrunde liegende Technologie von AKmira optronics basiert auf
+								der digital, optischen Holografie und ist eine Erweiterung von bekannten
+								optischen Interferenzverfahren. Diesen gemeinsam ist eine (teil-) kohärente
+								Lichtquelle, dessen Wellenfront in Richtung Objekt und Referenz-Spiegel
+								aufgeteilt wird. Nach Reflektion an Objekt und Spiegel werden die – durch das
+								Objekt entsprechend modifizierten – Wellenfronten zusammengeführt und
+								einer Kamera zugeleitet. Die resultierenden 2D Interferenzsignale werden
+								mit hoher Bildwiederholrate inline zu einem 3D Objekt ausgewertet.
+							</p>
+						</article>
+					</div>
+					<div class="col2"><img class="technologiebilder" src="bilder/holografie.svg"
+							alt="Bild zur digitalen Holografie"></div>
+				</section>
+			</div> <!-- technologie schließen -->
+
+			<!-- Karriere Bereich -->
+			<div id="karriere">
+				<section id="jobangebot">
+					<div class="col2"><img class="karrierebilder" src="bilder/office.jpg" alt="Ein freundliches Büro">
+					</div>
+					<div class="col3">
+
+						<aside id="angebot">
+							<h2>Karriere</h2>
+							<p>Sie möchten Ihre Ideen in nutzbringende und nachhaltig, sinnvolle Technologien
+								verwandeln?</p>
+							<p>Sie möchten etwas bewegen und eine revolutionäre „Made-in-Germany“ Technologie, die
+								digital, optische Holografie, mitentwickeln?</p>
+							<br>
+							<p>
+								Neben der Start Up Mentalität bieten wir Euch gute Bezahlung,
+								eine Möglichkeit zur zusätzlichen monetären Beteiligung an unserm Unternehmenserfolg
+								mittels Virtual Stock Options (VSOPs)
+								und zugleich einen sicheren Arbeitsplatz.
+							</p>
+							<p>Espresso und vitaminreiche Smoothies.</p>
+							<p>Hund Hedda streicheln (außerhalb des optischen Labors).</p>
+							<p>Sehr gute Parkmöglichkeiten / Verkehrsanbindung in Potsdam.</p>
+						</aside>
+						<aside id="potsdam">
+							<!-- Liste für die Jobangebote in Potsdam -->
+							<ul>
+
+								<!-- Vorlage:
+  			Zum ändern einer Stellenbeschreibung innerhalb <ul> oder hinzufügen einer Stellenbeschreibung benutze bitte folgede Vorlage.
+  			Hierbei ist darauf zu achten, dass sich die job-id nicht wiederholen darf. Somit ist das i in jobi und in linkjobi anzupassen.
+  			Die Stellen-Überschriften sind als Listenpunkte in <li>...</li> gesetzt. Gleichzeitig dienen diese als Links, sodass sie in der main.css
+  			formatiert werden können (aufklabbare Jobbeschreibung). Hierbei dient die STellenüberschrift als Link zum aufklappen und der Link(class=schliessen),
+  			um das aufgeklappte Element wieder zuzuklappen.
+
+  			 <li class="job" id="jobi">
+  			 <a class="joblink" href="#jobi" id="linkjobi"><img class="marker" src="bilder/pfeil_rechts.svg" alt="Link zur Stellenbbeschreibung"> Stellen-Angebot</a>
+         <br>
+  				<div class="jobbeschreibung">
+          <p>Für unsere spannenden Aufgaben bei unserem neuartigen 3D Mini-Endoskop (Medizintechnik), basierend auf der digital, optischen Holografie, suchen wir innovative und begeisterungsfähige Teammitglieder.</p>
+            <h4>Ihre Aufgaben</h4>
+  				  <ul>
+  				    <li>Aufgabe 1</li>
+    					<li>Aufgabe 2</li>
+    					<li>Aufgabe 3</li>
+  				  </ul>
+  				  <h4>Ihre Qualifikation</h4>
+  				  <ul>
+  				    <li>Qualifikation 1</li>
+    					<li>Qualifikation 2</li>
+    					<li>Qualifikation 3</li>
+    					<li>Qualifikation 4</li>
+    					<li>Qualifikation 5</li>
+    					<li>Qualifikation 6</li>
+  				  </ul>
+  				  <a class="schliessen" href="#linkjobi">&times;</a>
+  				</div>
+        </li>
+  			-->
+								<!-- erstes Jobangebot -->
+								<li class="job" id="job1">
+									<a class="joblink" href="#job1" id="linkjob1"><img class="marker"
+											src="bilder/pfeil_rechts.svg" alt="Link zur Stellenbbeschreibung">
+										Laserphysiker/-Ingenieur(m/w/d)</a>
+									<br>
+									<div class="jobbeschreibung">
+										<p>Für unsere spannenden Aufgaben bei unserem neuartigen 3D Mini-Endoskop
+											(Medizintechnik), basierend auf der digital, optischen Holografie, suchen
+											wir innovative und begeisterungsfähige Teammitglieder.</p>
+										<h4>Ihre Aufgaben</h4>
+										<ul>
+											<li>Entwicklung innovativer optischer Module für einen miniaturisierten
+												lasergestützten 3D Scanner</li>
+											<li>Realisierung eigener innovativer Ideen bis hin zu einem präsentierbaren
+												Prototypen</li>
+											<li>Theoretische und experimentelle Analyse von Ergebnissen als auch
+												Betreuung von Versuchsdurchführungen</li>
+											<li>Dokumentation von Versuchsergebnissen</li>
+										</ul>
+										<h4>Ihre Qualifikation</h4>
+										<ul>
+											<li>Erfolgreich abgeschlossenes Studium der Elektro-/ Nachrichten-/
+												Informationstechnik, Physik, oder technische Optik mit Schwerpunkt Optik
+												und Laser</li>
+											<li>Praxiserfahrung aus einer renommierten Firma mit optischem Scanner
+												Hintergrund wäre bevorzugt</li>
+											<li>Sehr fundierte Kenntnisse auf dem Gebiet der beugungsbegrenzten
+												Wellenoptik als auch optisch, digitaler Signalverarbeitung</li>
+											<li>Sehr gute Kenntnisse in der Programmierung mit Matlab als auch Python
+											</li>
+											<li>Programmierung von Mikrokontrollern wäre sehr wünschenswert</li>
+											<li>Analytische und strukturierte Arbeitsweise</li>
+											<li>Ein hohes Maß an Kommunikations-, Team-, Konflikt- und
+												Durchsetzungsfähigkeit, Selbstständigkeit und Eigenverantwortung</li>
+											<li>Sehr gute Deutsch- und Englischkenntnisse in Wort und Schrift</li>
+										</ul>
+										<a class="schliessen" href="#linkjob1">&times;</a>
+									</div>
+								</li>
+								<!-- Zweites Jobangebot -->
+								<li class="job" id="job2">
+									<a class="joblink" href="#job2" id="linkjob2"><img class="marker"
+											src="bilder/pfeil_rechts.svg" alt="Link zur Stellenbbeschreibung">
+										Masterarbeit: „Optische Holografie für Messungen unter der Oberfläche“
+										in der Medizintechnik (m/w/d)</a>
+									<br>
+									<div class="jobbeschreibung">
+										<p>Für unsere spannenden Aufgaben bei unserem neuartigen 3D Mini-Endoskop
+											(Medizintechnik), basierend auf der digital, optischen Holografie, suchen
+											wir innovative und begeisterungsfähige Teammitglieder.</p>
+										<h4>Ihre Aufgaben</h4>
+										<ul>
+											<li>Aufbau eines 3D Holografie-Moduls für Messungen unter einer Oberfläche
+												(die teuren Bauteile sind bereits vorhanden)</li>
+											<li>Optimierung von Algorithmen für die Verarbeitung und
+												Visualisierung von simulierten und gemessenen 3D Daten</li>
+											<li>In vitro und - in eingeschränkten Maße - in vivo Tests</li>
+											<li>Interdisziplinäre Zusammenarbeit</li>
+										</ul>
+										<h4>Ihre Qualifikation</h4>
+										<ul>
+											<li>Erfolgreich abgeschlossenes Bachelor-Studium der Informatik,
+												Elektro-/Nachrichten-/Informationstechnik,
+												Physik oder eine vergleichbare Ausbildung</li>
+											<li>Fundierte Kenntnisse in MATLAB (und ggf. Python)</li>
+											<li>Kenntnisse in der digitalen Bild- und Signalverarbeitung</li>
+											<li>Grundkenntnisse in der Optik von Vorteil</li>
+											<li>Ein hohes Maß an Kommunikations-, Team-, Konflikt- und
+												Durchsetzungsfähigkeit, Selbstständigkeit und Eigenverantwortung</li>
+											<li>Sehr gute Deutsch- und Englischkenntnisse in Wort und Schrift</li>
+										</ul>
+										<a class="schliessen" href="#linkjob2">&times;</a>
+									</div>
+								</li>
+								<!-- Ende zweites Jobangebot -->
+
+								<!--Anfang drittes Jobangebot-->
+								<li class="job" id="job3">
+									<a class="joblink" href="#job3" id="linkjob3"><img class="marker"
+											src="bilder/pfeil_rechts.svg"
+											alt="Link zur Stellenbbeschreibung">Masterarbeit:
+										FPGA-Entwicklung für 3D Daten-Processing via multipler 2D FFTs </a>
+									<br>
+									<div class="jobbeschreibung">
+										<p>Für eine Masterarbeit über unser neuartiges 3D Mini-Endoskop
+											(Medizintechnik), basierend auf der digital, optischen Holografie,
+											suchen wir einen begeisterungsfähigen Masterstudenten (m/w/d).</p>
+										<h4>Ihre Aufgaben</h4>
+										<ul>
+											<li>Design, Implementierung und Simulation eines FPGA-Algorithmus in der 2D
+												FFT Signalverarbeitung </li>
+											<li>Multiple Anwendungen der 2D FFTs um die 3D Objektform rekonstruieren zu
+												können</li>
+											<li>Schnittstellendefinition zwischen FPGA- und CPU- basierten Modulen (via
+												PCI-Express)</li>
+											<li>Abarbeitung von Daten mit Raten bis 100 Gb/s
+
+											</li>
+										</ul>
+										<h4>Ihre Qualifikation</h4>
+										<ul>
+											<li>Erfolgreich abgeschlossenes Bachelorstudium im Bereich Technische
+												Informatik,
+												Elektro-/Nachrichten-/Informationstechnik, Physik oder vergleichbares
+											</li>
+											<li>Fundierte Kenntnisse in VHDL-Programmierung und Simulationswerkzeugen
+											</li>
+											<li>Gewisse Kenntnisse in C/C++ Programmierung, sowie Matlab </li>
+											<li>Erfahrungen im Umgang mit Xilinx FPGAs wünschenswert</li>
+											<li>Ein hohes Maß an Kommunikations-, Team-, Konflikt- und
+												Durchsetzungsfähigkeit,
+												Selbstständigkeit und Eigenverantwortung</li>
+											<li>Sehr gute Deutsch- (und Englischkenntnisse) in Wort und Schrift</li>
+										</ul>
+										<a class="schliessen" href="#linkjob3">&times;</a>
+									</div>
+								</li>
+								<!--Ende drittes Jobangebot-->
+
+								<!--Anfang viertes Jobangebot-->
+								<li class="job" id="job4">
+									<a class="joblink" href="#job4" id="linkjob4"><img class="marker"
+											src="bilder/pfeil_rechts.svg" alt="Link zur Stellenbbeschreibung">
+										FPGA-/Elektronik-Ingenieur (m/w/d)</a>
+									<br>
+									<div class="jobbeschreibung">
+										<p>Für unsere spannenden Aufgaben bei unserem neuartigen 3D Mini-Endoskop
+											(Medizintechnik), basierend auf der digital, optischen Holografie, suchen
+											wir innovative und begeisterungsfähige Teammitglieder.</p>
+										<h4>Ihre Aufgaben</h4>
+										<ul>
+											<li>Design, Implementierung und Simulation von hochoptimierten
+												FPGA-Algorithmen in der Signalverarbeitung auf verschiedenen
+												Scanner-Modulen</li>
+											<li>Schnittstellendefinition zwischen FPGA- und CPU- basierten Modulen</li>
+											<li>Unterstützung bei zumeist digitalen Schaltungskonzepten und
+												Datenübertragungsstrecken bis zu Raten von mehreren 10 Gb/s</li>
+											<li>Betreuung von externem Entwicklungspartner bei der Elektronikentwicklung
+											</li>
+										</ul>
+										<h4>Ihre Qualifikation</h4>
+										<ul>
+											<li>Erfolgreich abgeschlossenes Hochschulstudium im Bereich Technische
+												Informatik, Elektro-/Nachrichten-/Informationstechnik, Physik oder
+												vergleichbares</li>
+											<li>Sehr fundierte Kenntnisse in VHDL-Programmierung und
+												Simulationswerkzeugen</li>
+											<li>Kenntnisse in C/C++ Programmierung, sowie Matlab</li>
+											<li>Praktische Erfahrung im Bereich Digitaltechnik bis zu einigen GHz</li>
+											<li>Erfahrung im Bereich analoge Regelungstechnik bis zu einigen MHz
+												wünschenswert</li>
+											<li>Ein hohes Maß an Kommunikations-, Team-, Konflikt- und
+												Durchsetzungsfähigkeit, Selbstständigkeit und Eigenverantwortung</li>
+											<li>Sehr gute Deutsch- und Englischkenntnisse in Wort und Schrift</li>
+										</ul>
+										<a class="schliessen" href="#linkjob4">&times;</a>
+									</div>
+								</li>
+								<!-- Ende viertes Jobangebot -->
+
+
+
+								<!-- Anfang fünftes Jobangebot ************************************************************************-->
+								<li class="job" id="job5">
+									<!-- Link für die aufklappbare Jobbeschreibung, kennzeichnen bei Touch? -->
+									<a class="joblink" href="#job5" id="linkjob5"><img class="marker"
+											src="bilder/pfeil_rechts.svg" alt="Link zur Stellenbbeschreibung"> C/C++
+										Software Entwickler (m/w/d)</a>
+									<br>
+									<div class="jobbeschreibung">
+										<p>Für unsere spannenden Aufgaben bei unserem neuartigen 3D Mini-Endoskop
+											(Medizintechnik), basierend auf der digital, optischen Holografie, suchen
+											wir innovative und begeisterungsfähige Teammitglieder.</p>
+										<h4>Ihre Aufgaben</h4>
+										<ul>
+											<li>Implementierung und Optimierung von teilweise bestehenden
+												Matlab-Algorithmen für die Generierung von 3D Punktewolken und Objekt
+												Echtzeit-Darstellung</li>
+											<li>Code-Optimierung in Bezug auf Parallelisierung und Speicherverwaltung in
+												einer CPU mit späterer GPU-Anbindung</li>
+											<li>Interdisziplinäre Zusammenarbeit</li>
+										</ul>
+										<h4>Ihre Qualifikation</h4>
+										<ul>
+											<li>Erfolgreich abgeschlossenes Hochschulstudium im Bereich Informatik,
+												technische Informatik, Elektro-/Nachrichten-/Informationstechnik, Physik
+												oder vergleichbares</li>
+											<li>Fundierte Erfahrung in C/ C++ für High-Tech Projekte</li>
+											<li>Sehr gute Kenntnisse in der digitalen Bild- und Signalverarbeitung</li>
+											<li>Kenntnisse in Matlab sehr wünschenswert</li>
+											<li>CUDA oder OpenCL Kenntnisse hilfreich, aber kein Muss</li>
+											<li>Ein hohes Maß an Kommunikations-, Team-, Konflikt- und
+												Durchsetzungsfähigkeit, Selbstständigkeit und Eigenverantwortung</li>
+											<li>Sehr gute Deutsch- und Englischkenntnisse in Wort und Schrift</li>
+										</ul>
+										<!-- Schließen-Link, um die Jobbeschreibung wieder einzuklappen -->
+										<a class="schliessen" href="#linkjob5">&times;</a>
+									</div><!-- Ende der Jobbeschreibung -->
+								</li>
+								<!-- Ende fünftes Jobangebot **********************************************************************-->
+
+
+							</ul>
+						</aside>
+						<!-- Nun kommen Informationen, was zur Bewerbung einzureichen ist! -->
+						<aside id="bewerbeninfo">
+							<p>Wenn Sie als Individualist die berufliche Herausforderung reizt,</p>
+							<br>
+							<p>als Mitarbeiter keine Nummer, sondern Diamant sein möchten,</p>
+							<br>
+							<p>senden Sie bitte Ihre Bewerbung per Mail an:</p>
+							<br>
+							<p>Frau Birte Filling / HR Management</p>
+							<p><a href="mailto:info@AKmira-optronics.de">info@AKmira-optronics.de</a></p>
+							<p>Tel: +49 (0)331 / 982231-0</p>
+							<p>Mobil: +49 (0)160 95469461</p>
+							<br>
+							<p>Wir freuen uns auf Ihre Bewerbung!!!</p>
+							</p>
+						</aside>
+					</div>
+				</section>
+			</div>
+			<!-- Karriere-Bereich schließen -->
+			<!-- Kontakt-Bereich -->
+			<div id="kontakt">
+				<section id="kontaktallgemein">
+					<div class="col1"></div>
+					<div class="col3">
+						<h2>Kontaktieren Sie uns unter:</h2>
+						<p>
+							Dr. Alexander Knüttel<br>
+							Geschäftsführer<br>
+							Ricarda-Huch-Str. 2<br>
+							14480 Potsdam<br>
+							<a href="mailto:info@AKmira-optronics.de">info@AKmira-optronics.de</a><br>
+							Tel. 0331/982231-0
+						</p>
+					</div>
+					<div class="col1"></div>
+				</section>
+			</div> <!-- Kontakt schließen -->
+
+			<!-- Fuss Bereich -->
+			<div id="fuss">
+				<footer>
+					<span class="ende">&copy;AKmira</span>
+					<span class="ende"><a href="impressum.html">Impressum</a></span>
+					<span class="ende"><a href="datenschutz.html">Datenschutzhinweis</a></span>
+				</footer>
+			</div> <!-- Fuss schließen -->
+
+		</div> <!-- Rest schließen-->
+
+	</div> <!-- Gesamtcontainer schließen -->
+
+</body>
+
+</html>

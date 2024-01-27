@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Andreas Guzu">
+	<meta name="description" content="Endoskopy based on digital optical holography">
+	<meta name="keywords"
+		content="AKmira optronics, medical technology, endoscopy, digitale optical holografy, interferometry, miniaturiized 3D endoscope, 3D scanning, Potsdam, Berlin, Dr. Alexander Knüttel">
+	<title>AKmira optronics</title>
+	<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<!--___________________________________________________________________________________________________________-->
+
+<body>
+	<!-- Gesamtcontainer, hierin wird alles in einem Container untergebracht -->
+	<div id="gesamt">
+
+		<!-- Kopfcontainer Hier kommt der Header mit dem Logo und der Navigation -->
+		<div id="kopf">
+			<section id="kopfcontainer">
+				<!-- Logo  -->
+				<div class="col2">
+					<a href="en_index.html"><img class="logo" src="bilder/logo.svg"
+							alt="Companylogo AKmira optronics"></a>
+				</div>
+				<!-- Hauptnavigation -->
+				<div class="col3">
+					<nav id="hauptnavigation">
+						<!-- Link(<a> ... </a> zum Öffnen der aufklappbaren Navigation (Mobile-Version) -->
+						<a id="menue" href="#hauptnavigation">&equiv;</a>
+						<!-- Navigationselemente in Form einer Liste -->
+						<ul id="toplist">
+							<li class="top"><a href="#start">Home</a></li>
+							<li class="top"><a href="#wir">About us</a></li>
+							<li class="top"><a href="#technologie">Technology</a></li>
+							<li class="top"><a href="#karriere">Career</a></li>
+							<li class="top dropdown" id="aktuelles">
+								<a href="#aktuelles">News</a>
+								<ul class="dropdown-liste">
+									<li>
+										<a href="https://innovatives-brandenburg.de/de/cluster-stories/der-winzige-scanner-der-alles-sieht"
+											target="_blank">
+											Innovatives Brandenburg
+										</a>
+									</li>
+									<li>
+										<a href="https://www.optik-bb.de/news/artikel/der-winzige-scanner-der-alles-sieht/"
+											target="_blank">
+											Optik-Brandenburg
+										</a>
+									</li>
+									<li class="dropdown-schliessen-li">
+										<a href="#hauptnavigation" class="dropdown-schliessen">&times;</a>
+									</li>
+								</ul>
+							</li>
+							<li class="top"><a href="#kontakt">Contact</a></li>
+						</ul>
+						<!-- Schliessen-Link zum Schließen des aufklappbaren Menüs (mobile-Version) -->
+						<a id="schliessemenue" href="#menue">&times;</a>
+					</nav> <!-- Hauptnavigation schließen -->
+				</div>
+			</section> <!-- Sectionbereich des Kopfcontainers schließen  -->
+		</div> <!-- Kopfcontainer schließen -->
+
+		<div id="rest">
+
+			<!-- Zurück-Link, Mit dem Link, in Form eines Bildes, kommt man immer zurück zum Start -->
+			<div id="back">
+				<a href="#kopf"><img src="bilder/pfeil.svg" alt="Back to Home"></a>
+			</div>
+			<div class="btnlang">
+				<a href="index.html">
+					<img src="bilder/en_de.svg" alt="Change language to German">
+				</a>
+			</div>
+
+			<!-- Startseite Bereich -->
+			<div id="start">
+				<section>
+					<div class="col5">
+						<img class="hero" src="bilder/HerzLaser.svg" alt="Laserbeam">
+						<img class="heart" src="bilder/Herz.svg" alt="Hologram of a heart">
+						<img class="heroV" src="bilder/HerzLaserV.svg" alt="Laserbeam">
+						<h1>We offer ultra miniaturized digital 3D holography and guide you to new frontiers in medical
+							technology!<br>
+							<a href="#karriere" class="lead">Career</a>
+						</h1>
+					</div>
+				</section>
+			</div> <!-- Startseite schließen -->
+
+			<!-- Über uns Bereich -->
+			<div id="wir">
+				<section>
+					<div class="col2"><img class="wirbilder" src="bilder/scribblenrm.svg" alt="Picture about endoskopy">
+					</div>
+					<div class="col3">
+						<article>
+							<h2>About us</h2>
+							<p>
+								AKmira optronics develops miniaturized 3D scanners with applications in 3D endoscopy/
+								medical technology.
+								The technology – new outside the academic environment – is based on digital, optical
+								holography which
+								can be regarded as extension of more widely known interference methods like OCT (Optical
+								Coherence Tomography)
+								or Interference microscopy. Inherent advantages are for e.g.:
+							</p>
+							<ul>
+								<li>Scanning of 3D objects, also low structured object surfaces</li>
+								<li>Optical stitching over much larger regions as compared to the scanning window</li>
+								<li>Hand movement or hand tremor has no negative impact on scanner performance</li>
+								<li>RGB color information with microscopic resolution</li>
+								<li>No moving parts within the 3D scanner</li>
+							</ul>
+							<br>
+							<p>
+								The founder and CEO Dr. Alexander Knüttel has introduced the digital, optical
+								holography,
+								which is brand new in the industrial environment. Its miniaturized scanner modules serve
+								various market
+								segments within medical technology. Goal is a substantial miniaturization down to
+								volumes with few mm
+								edge length in all dimensions. Full color information as well as further measurement
+								modalities in sub-surface
+								mode will be integrated.
+								<br><br>
+								Our team size is rapidely growing with various technological disciplines available in
+								this challenging environment. Headquarter is Potsdam/ Germany. Our slogan is:
+								<q>Jump – and make sure your wings grow</q> (Ray Bradburry)
+							</p>
+						</article>
+					</div>
+				</section>
+			</div> <!-- wir schließen -->
+
+			<!-- Technologie Bereich -->
+			<div id="technologie">
+				<section id="uebersicht">
+					<div class="col3">
+						<article>
+							<h2>Our Technology</h2>
+							<!-- Hier kann innerhalb der <p>-Tags ein Text ausgegeben werden -->
+							<p>
+								The basic technology of AKmira optronics is based on digital optical holography,
+								which is an extension of well known optical interference methods. In common is
+								a (partially) coherent light source whose optical wavefront will be split towards
+								the object and a reference mirror. After reflection from the object, the altered
+								wavefront will be combined with the deterministic wavefront from the reference
+								mirror to form 2D interference patterns. Those will be acquired by a camera with
+								high repetition rate to provide inline information about the 3D object
+								after high-speed computing.
+							</p>
+						</article>
+					</div>
+					<div class="col2"><img class="technologiebilder" src="bilder/holografie_en.svg"
+							alt="Picture about digital holography"></div>
+				</section>
+			</div> <!-- technologie schließen -->
+
+			<!-- Karriere Bereich -->
+			<div id="karriere">
+				<section id="jobangebot">
+					<div class="col2"><img class="karrierebilder" src="bilder/office.jpg"
+							alt="Picture of a friendly Office"></div>
+					<div class="col3">
+						<aside id="angebot">
+							<h2>Career</h2>
+							<p>Would you like to turn your ideas into useful and meaningful technologies?</p>
+							<p>Would you like to make a difference and help develop a revolutionary “Made in Germany”
+								technology, digital, optical holography?</p>
+							<br>
+							<p>
+								Besides start-up mentality, you will be directly participating at the company’s monetary
+								success via Virtual Stock Options (VSOPs)
+								and a safe job.
+							</p>
+							<p>Espresso and fresh fruits.</p>
+							<p>Pet Hedda dog (outside the optical laboratory) suitable for allergy sufferers.</p>
+							<p>Very good transport connection / on-site parking in Potsadam.</p>
+						</aside>
+
+						<aside id="potsdam">
+							<h3>The following posts will be offered in Potsdam/ Germany:</h3>
+							<!-- Liste für die Jobangebote in Potsdam -->
+							<ul>
+
+								<!-- Vorlage:
+    			Zum ändern einer Stellenbeschreibung innerhalb <ul> oder hinzufügen einer Stellenbeschreibung benutze bitte folgede Vorlage.
+    			Hierbei ist darauf zu achten, dass sich die job-id nicht wiederholen darf. Somit ist das i in jobi und in linkjobi anzupassen.
+    			Die Stellen-Überschriften sind als Listenpunkte in <li>...</li> gesetzt. Gleichzeitig dienen diese als Links, sodass sie in der main.css
+    			formatiert werden können (aufklabbare Jobbeschreibung). Hierbei dient die STellenüberschrift als Link zum aufklappen und der Link(class=schliessen),
+    			um das aufgeklappte Element wieder zuzuklappen.
+
+    		 <li class="job" id="jobi">
+    			 <a class="joblink" href="#jobi" id="linkjobi"><img class="marker" src="bilder/pfeil_rechts.svg" alt="link to the jobdescription"> Stellen-Angebot</a>
+           <br>
+    				<div class="jobbeschreibung">
+              <p>For our exciting tasks regarding our new 3D mini-endoscope based on digital, optical holography, we are looking for innovative and enthusiastic team members.</p>
+              <h4>Your tasks</h4>
+    				  <ul>
+    				    <li>Aufgabe 1</li>
+      					<li>Aufgabe 2</li>
+      					<li>Aufgabe 3</li>
+    				  </ul>
+    				  <h4>Your qualifications</h4>
+    				  <ul>
+    				    <li>Qualifikation 1</li>
+      					<li>Qualifikation 2</li>
+      					<li>Qualifikation 3</li>
+      					<li>Qualifikation 4</li>
+      					<li>Qualifikation 5</li>
+      					<li>Qualifikation 6</li>
+    				  </ul>
+    				  <a class="schliessen" href="#linkjobi">&times;</a>
+    				</div>
+          </li>
+    			-->
+
+								<!-- Erstes Jobangebot -->
+								<li class="job" id="job1">
+									<a class="joblink" href="#job1" id="linkjob1"><img class="marker"
+											src="bilder/pfeil_rechts.svg" alt="link to the jobdescription">
+											Laser physicist/engineer (m/f/d)</a>
+									<br>
+									<div class="jobbeschreibung">
+										<p>For our exciting tasks regarding our new 3D mini-endoscope based on digital,
+											optical holography, we are looking for innovative and enthusiastic team
+											members.</p>
+										<h4>Your tasks</h4>
+										<ul>
+											<li>Development of innovative optical modules for a miniaturized laser-based 3D scanner</li>
+											<li>Realization of own innovative ideas up to a presentable prototype</li>
+											<li>Theoretical and experimental analysis of results as well as supervision of test procedures</li>
+											<li>Documentation of test results</li>
+										</ul>
+										<h4>Your qualifications</h4>
+										<ul>
+											<li>Successfully completed studies in electrical engineering, communications engineering, information 
+												technology, physics, or technical optics with a focus on optics and lasers</li>
+											<li>Practical experience from a reputable company with an optical scanner background would be preferred</li>
+											<li>Very sound knowledge in the field of diffraction-limited wave optics as well as optical, digital signal processing</li>
+											<li>Very good knowledge of programming with Matlab and Python</li>
+											<li>Programming of microcontrollers would be very desirable</li>
+											<li>Analytical and structured way of working</li>
+											<li>High degree in communication and team building skills as well as being
+												assertive with self-reliance</li>
+											<li>Sound knowledge in German and English speaking and writing</li>
+										</ul>
+										<a class="schliessen" href="#linkjob1">&times;</a>
+									</div>
+								</li>
+								<!-- zweites Jobanagebot -->
+								<li class="job" id="job2">
+									<a class="joblink" href="#job2" id="linkjob2"><img class="marker"
+											src="bilder/pfeil_rechts.svg" alt="link to the jobdescription">Master's
+										thesis: "Optical holography for measurements below the surface"
+										in medical technology(m/f/d)</a>
+									<br>
+									<div class="jobbeschreibung">
+										<p>For our exciting tasks regarding our new 3D mini-endoscope based on digital,
+											optical holography, we are looking for innovative and enthusiastic team
+											members.</p>
+										<h4>Your tasks</h4>
+										<ul>
+											<li>Construction of a 3D holography module for measurements under a surface
+												(the expensive components are already in place)</li>
+											<li>Optimization of algorithms for processing and visualization of simulated
+												and measured 3D data</li>
+											<li>In vitro and - to a limited extent - in vivo tests</li>
+											<li>Collaboration within various internal disciplines</li>
+										</ul>
+										<h4>Your qualifications</h4>
+										<ul>
+											<li>Successfully completed bachelor's degree in computer science,
+												electrical/communications/information technology, physics or a
+												comparable education </li>
+											<li>Profound knowledge of MATLAB (and possibly Python)</li>
+											<li>Knowledge of digital image and signal processing</li>
+											<li>Basic knowledge of optics would be an advantage</li>
+											<li>High degree in communication and team building skills as well as being
+												assertive with self-reliance</li>
+											<li>Sound knowledge in German and English speaking and writing</li>
+										</ul>
+										<a class="schliessen" href="#linkjob2">&times;</a>
+									</div>
+								</li>
+								<!-- Ende zweites Jobangebot -->
+								
+								<!--Anfang drittes Jobangebot-->
+								
+								<li class="job" id="job3">
+									<a class="joblink" href="#job3" id="linkjob3"><img class="marker" src="bilder/pfeil_rechts.svg" 
+										alt="link to the jobdescription"> Master thesis: FPGA development for 3D data processing via 
+										multiple 2D FFTs
+									</a>
+							  <br>
+									   <div class="jobbeschreibung">
+								 <p>We are looking for an enthusiastic master's student (m/f/d) for a master's thesis on our innovative 3D 
+									 mini-endoscope (medical technology), based on digital, optical holography.</p>
+								 <h4>Your tasks</h4>
+										 <ul>
+										   <li>Design, implementation and simulation of an FPGA algorithm 
+											   in 2D FFT signal processing</li>
+											 <li>Multiple uses of 2D FFTs to reconstruct the 3D object shape</li>
+											 <li>Interface definition between FPGA and CPU-based modules 
+												 (via PCI Express)</li>
+												 <li>Process data at rates up to 100 Gb/s</li>
+										 </ul>
+										 <h4>Your qualifications</h4>
+										 <ul>
+										   <li>Successfully completed bachelor's degree in technical computer science, 
+											   electrical/communications/information technology, physics or similar</li>
+											 <li>Sound knowledge of VHDL programming and simulation tools</li>
+											 <li>Some knowledge of C/C++ programming and Matlab</li>
+											 <li>Experience in handling Xilinx FPGAs desirable</li>
+											 <li>A high degree of communication, team, conflict and assertiveness, 
+												 independence and personal responsibility</li>
+											 <li>Very good knowledge of German (and English) both spoken and written</li>
+										 </ul>
+										 <a class="schliessen" href="#linkjob3">&times;</a>
+									   </div>
+							 </li>
+								   <!--Ende drittes Jobangebot-->
+								
+								<!--Viertes Jobangebot-->
+								
+							
+								<li class="job" id="job4">
+									<a class="joblink" href="#job4" id="linkjob4"><img class="marker"
+											src="bilder/pfeil_rechts.svg" alt="link to the jobdescription">
+										FPGA-/Electronics-Engineer (m/f/d)</a>
+									<br>
+									<div class="jobbeschreibung">
+										<p>For our exciting tasks regarding our new 3D mini-endoscope based on digital,
+											optical holography, we are looking for innovative and enthusiastic team
+											members.</p>
+										<h4>Your tasks</h4>
+										<ul>
+											<li>Design, implementation and simulation of highly optimized FPGA
+												algorithms for signal processing in various scanner modules</li>
+											<li>Definition of interfaces between FPGA and CPU based modules</li>
+											<li>Support for predominantly digital circuit concepts and transmission
+												lines at rates up to several 10 Gb/s</li>
+											<li>Supervision of external collaboration partners for electronic (FPGA-)
+												projects</li>
+										</ul>
+										<h4>Your qualifications</h4>
+										<ul>
+											<li>Successfully mastered university or college degree in the faculties
+												Technical Informatics, Electronics/ Electrical Engineering, Physics or
+												similar faculties</li>
+											<li>Profound knowledge in VHDL-programming and simulation tools</li>
+											<li>Knowledge in C/C++ programming and Matlab</li>
+											<li>Practical experience in high-speed digital technology up to several GHz
+											</li>
+											<li>Experience in analog electronics up to few MHz of advantage</li>
+											<li>High degree in communication and team building skills as well as being
+												assertive with self-reliance</li>
+											<li>Sound knowledge in German and English speaking and writing</li>
+										</ul>
+										<a class="schliessen" href="#linkjob4">&times;</a>
+									</div>
+								</li>
+								<!-- Ende viertes Angebot -->
+
+								<!-- fünftes Jobangebot ************************************************************************-->
+								<li class="job" id="job5">
+									<!-- Link für die aufklappbare Jobbeschreibung, kennzeichnen bei Touch? -->
+									<a class="joblink" href="#job5" id="linkjob5"><img class="marker"
+											src="bilder/pfeil_rechts.svg" alt="link to the jobdescription"> C/C++
+										Software-Engineer (m/f/d)</a><br>
+									<div class="jobbeschreibung">
+										<p>For our exciting tasks regarding our new 3D mini-endoscope based on digital,
+											optical holography, we are looking for innovative and enthusiastic team
+											members.</p>
+										<h4>Your tasks</h4>
+										<ul>
+											<li>Implementation and optimization of existing Matlab algorithms for the
+												generation of 3D point clouds and real time visualization of 3D objects
+											</li>
+											<li>Code optimization regarding parallelism and storage allocation within a
+												CPU with potential GPU extension</li>
+											<li>Interdisciplinary collaboration with various disciplines</li>
+										</ul>
+										<h4>Your qualifications</h4>
+										<ul>
+											<li>Successfully mastered university or college degree in the faculties
+												Informatics, Technical Informatics, Electronics/ Electrical Engineering,
+												Physics or similar faculties</li>
+											<li>Profound knowledge in C/C++ programming for high-tech projects</li>
+											<li>Strong knowledge in digital image and signal processing</li>
+											<li>Experience with Matlab strongly desired</li>
+											<li>Experience with CUDA and/ or OpenCL would be great</li>
+											<li>High degree in communication and team building skills as well as being
+												assertive with self-reliance</li>
+											<li>Sound knowledge in German and English speaking and writing</li>
+										</ul>
+										<!-- Schließen-Link, um die Jobbeschreibung wieder einzuklappen -->
+										<a class="schliessen" href="#linkjob5">&times;</a>
+									</div><!-- Ende der Jobbeschreibung -->
+								</li>
+								
+								<!-- Ende fünftes Jobangebot **********************************************************************-->
+								
+                               <!--Ende viertes Jobangebot-->
+
+								<!-- Nun kommen Informationen, was zur Bewerbung einzureichen ist! -->
+								<aside id="bewerbeninfo">
+									<h4>For your application we need the following documents:</h4>
+									<ul>
+										<li>cv with photo and testimonials/ credentials (PDF)</li>
+										<li>Short letter of motivation</li>
+									</ul>
+									<p>Please send the documents to:</P><br>
+									<p>Mrs. Birte Filling</p>
+									<p><a href="mailto:info@AKmira-optronics.de">info@AKmira-optronics.de</a></p>
+									<p>Tel: +49 (0)331 / 982231-0</p>
+									<p>Mobile: +49 (0)160 95469461</p>
+									<br>
+									<p>We are looking forward to your application!!!</p>
+								</aside>
+					</div>
+				</section>
+			</div>
+			<!-- Karriere-Bereich schließen -->
+
+			<!-- Kontakt-Bereich -->
+			<div id="kontakt">
+				<section id="kontaktallgemein">
+					<div class="col1"></div>
+					<div class="col3">
+						<h2>Please contact us under:</h2>
+						<p>
+							Alexander Knüttel, PhD<br>
+							CEO<br>
+							Ricarda-Huch-Str. 2<br>
+							14480 Potsdam<br>
+							<a href="mailto:info@AKmira-optronics.de">info@AKmira-optronics.de</a><br>
+							Tel. 0331/982231-0
+						</p>
+					</div>
+					<div class="col1"></div>
+				</section>
+			</div> <!-- Kontakt schließen -->
+
+			<!-- Fuss Bereich -->
+			<div id="fuss">
+				<footer>
+					<span class="ende">&copy;AKmira</span>
+					<span class="ende"><a href="impressum.html">Impressum</a></span>
+					<span class="ende"><a href="datenschutz.html">Datenschutzhinweis</a></span>
+				</footer>
+			</div> <!-- Fuss schließen -->
+
+		</div> <!-- Rest schließen-->
+
+	</div> <!-- Gesamtcontainer schließen -->
+
+</body>
+
+</html>
